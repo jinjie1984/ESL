@@ -1,0 +1,14 @@
+This tool support simulate multiple core based on Pin.
+
+Run method as below:
+
+	Step1 Run Pin and target programe.
+		Core0
+		>pin -t cache_sim_shm.so -key 1000 -- ./sim
+		Core1
+		>pin -t cache_sim_shm.so -key 2000 -- ./sim
+
+	Step2 Run cache simulation
+		>./simulation 1000 2000
+
+
